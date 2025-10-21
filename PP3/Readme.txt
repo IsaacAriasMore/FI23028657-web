@@ -1,11 +1,11 @@
 # Práctica Programada 3 - SC-701
 
-## Información del estudiante
+##estudiante
 **Nombre**:Isaac Arias Morera
 **Carné**: FI23028657
 
 ## Comandos utilizados
-```
+
 # Crear el solution
 dotnet new sln -n PP3Solution
 
@@ -24,7 +24,7 @@ dotnet run
 
 dotnet build
 
-```
+
 
 ## Recursos consultados
 
