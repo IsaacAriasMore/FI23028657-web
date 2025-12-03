@@ -2,9 +2,10 @@ namespace Transportation.Models;
 
 public class Ships
 {
+    // https://en.wikipedia.org/wiki/RMS_Titanic
     public DateTime EndOfTitanic()
     {
-        return new DateTime();
+        return new DateTime(1912, 4, 15);
     }
 
     public DateTime EndOfBritannic()

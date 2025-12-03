@@ -26,9 +26,10 @@ public class ShipsUnitTests
     [Fact]
     public void BritannicSankSpecificMonth()
     {
+        
         var expected = 11;
         var ships = new Ships();
-        var actual = ships.EndOfBritannic().Day;
+        var actual = ships.EndOfBritannic().Month;
         Assert.Equal(expected, actual);
     }
 
@@ -39,6 +40,17 @@ public class ShipsUnitTests
         var expected = current - 1916;
         var ships = new Ships();
         var actual = current - ships.EndOfBritannic().Year;
+        Assert.Equal(expected, actual);
+    }
+
+ 
+    // https://en.wikipedia.org/wiki/RMS_Olympic
+    [Fact]
+    public void OlympicWasOutOfServiceSpecificDay()
+    {
+        var expected = 12;
+        var ships = new Ships();
+        var actual = ships.EndOfOlympic().Day;
         Assert.Equal(expected, actual);
     }
 }
